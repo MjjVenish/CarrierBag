@@ -7,4 +7,5 @@ const port = 3007;
 server.use(middlewares);
 server.use(router);
 
+console.log(`${port}`);
 server.listen(port);
