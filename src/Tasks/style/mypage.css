@@ -34,7 +34,7 @@ margin-top: 12px;
 }
 .rember,.submit{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .rember input{
    margin-left: 5px;
@@ -107,6 +107,8 @@ margin-top: 12px;
    padding-bottom: 20px;
 }
 }
+
+
 @media (min-width:1050px){
  .sgin-parent{
     row-gap: 20px;

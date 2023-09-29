@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useProduct } from "../../context/ProductContext";
 import Goback from "../components/Goback";
 import SingleProduct from "../components/SingleProduct";
