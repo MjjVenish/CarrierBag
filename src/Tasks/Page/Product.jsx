@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { getBagName } from "../../lib/axios/CRUD";
 import SingleProduct from "../components/SingleProduct";
 import { useProduct } from "../../context/ProductContext";
+import data from "./data";
 
 const Product = () => {
   const [allBags, setAllBags] = useState([]);
   const { itTrue } = useProduct();
   useEffect(() => {
-    getBagName().then((res) => setAllBags(res.data));
+    getBagName()
+      .then((res) => setAllBags(res.data))
+      .catch((err) => setAllBags(data));
   }, []);
   return (
     <div className="main-page">
