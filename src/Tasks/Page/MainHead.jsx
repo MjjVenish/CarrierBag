@@ -9,10 +9,12 @@ import CarrierShop from "../components/CarrierShop";
 import { BsBag } from "react-icons/bs";
 import { IoMdSearch } from "react-icons/io";
 import BagsNavbar from "../components/BagsNavbar";
+import { useNavigate } from "react-router-dom";
 
 const MainHead = () => {
   const [itTrue, setItTrue] = useState(false);
   const [isTrue, setIsTrue] = useState(false);
+  const navigate = useNavigate();
   const updateStateBasedOnViewport = () => {
     if (window.innerWidth <= 810) {
       setItTrue(true);
@@ -60,7 +62,7 @@ const MainHead = () => {
           <GoMail className="size-ic" />
           <IoIosCall className="size-ic" />
           <MdShoppingBag className="size-ic" />
-          <FaUser className="size-ic" />
+          <FaUser className="size-ic" onClick={() => navigate("/mypage")} />
         </div>
       )}
       <div className="flex items-center logo just-between">
