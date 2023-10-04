@@ -7,6 +7,15 @@
 .bags{
     cursor: pointer;
 }
+ .bags span {
+     height: 5px;
+     background-color: #fff;
+     color: #fff;
+     width: 100%;
+ }
+ .bags:hover .bt {
+     background-color: #64c055;
+ }
 .home-nav{
     justify-content: space-around;
     height: 8vh;
@@ -99,9 +108,7 @@ padding: 1rem 2rem;
     border: none;
     margin-bottom: 1rem;
 }
-.bags:hover{
-    border-top: 5px solid #4e9b44 ;
-}
+
 .contact h3{
     padding: 12px 0px;
 }
@@ -223,6 +230,7 @@ padding: 1rem 2rem;
         border: none;
         margin-top: 0px;
      }
+    
      .loop{
         /* border: 1px solid black; */
         padding: 0 20px;

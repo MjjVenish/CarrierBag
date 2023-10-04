@@ -9,6 +9,7 @@ const SingleProduct = ({ product, itTrue }) => {
   const { confirm } = useProduct();
   return (
     <div onClick={() => setClick(!click)} className="bags">
+      <span className="bt"> </span>
       <div className="loop">
         {!itTrue && (
           <FontAwesomeIcon icon={faBriefcase} size="4x" className="fontaw" />
