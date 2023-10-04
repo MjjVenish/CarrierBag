@@ -8,7 +8,7 @@ const SginIn = () => {
   return (
     <>
       <nav className="log">
-        <Link>Home</Link>
+        <Link className="">Home</Link>
         <Link>MyAccount</Link>
       </nav>
       <main className="sgin-parent">

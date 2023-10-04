@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useProduct } from "../../context/ProductContext";
+import { RiArrowUpSLine, RiArrowDownSLine } from "react-icons/ri";
 
 const Parts = ({ title, one, two, three }) => {
   const { itTrue } = useProduct();
@@ -8,19 +9,31 @@ const Parts = ({ title, one, two, three }) => {
     <>
       {!itTrue ? (
         <div className="contact">
-          <h3>{title}</h3>
-          <h5>{one}</h5>
-          <h5>{two}</h5>
-          <h5>{three}</h5>
+          <h3>
+            {title} <RiArrowUpSLine className="up-down" />
+          </h3>
+          <h4>{one}</h4>
+          <h4>{two}</h4>
+          <h4>{three}</h4>
         </div>
       ) : (
         <div className="contact">
-          <h3 onClick={() => setClick(!click)}>{title}</h3>
+          <h3
+            onClick={() => setClick(!click)}
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
+            {title}{" "}
+            {click ? (
+              <RiArrowUpSLine className="up-down" />
+            ) : (
+              <RiArrowDownSLine className="up-down" />
+            )}
+          </h3>
           {click && (
             <>
-              <h5>{one}</h5>
-              <h5>{two}</h5>
-              <h5>{three}</h5>
+              <h4>{one}</h4>
+              <h4>{two}</h4>
+              <h4>{three}</h4>
             </>
           )}
         </div>

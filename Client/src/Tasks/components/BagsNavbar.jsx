@@ -10,6 +10,7 @@ const BagsNavbar = () => {
       <Link>Take Away Carrier bags</Link>
       <Link>Jute bags</Link>
       <Link>Branded Packaging</Link>
+      <Link>Tissue Paper</Link>
       <Link>Gift Packaging</Link>
       <Link>Postal & Malling</Link>
       <Link>Intustrial Supplies</Link>

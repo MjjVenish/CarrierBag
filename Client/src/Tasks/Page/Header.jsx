@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import { AiOutlineUnorderedList } from "react-icons/ai";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { IoMdSearch } from "react-icons/io";
 import ProcessNavbar from "../components/ProcessNavbar";
 import { useProduct } from "../../context/ProductContext";
 import { BsBag } from "react-icons/bs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isTrue, setIsTrue] = useState({ width: false, option: false });
@@ -28,7 +30,8 @@ const Header = () => {
       {isTrue.width ? (
         <div className="flex search-div" id="sticky">
           <div className="option">
-            <AiOutlineUnorderedList
+            <FontAwesomeIcon
+              icon={faBars}
               onClick={() =>
                 setIsTrue((pre) => ({ ...pre, option: !pre.option }))
               }
@@ -37,13 +40,19 @@ const Header = () => {
             {!itTrue && <span>Menu</span>}
           </div>
           <div className="search relative">
-            <input type="text" placeholder="E.g. Red Papper Bags,Jute Bags " />
+            <input
+              type="text"
+              placeholder="E.g. Red Papper Bags, Jute Bags, tissue bags"
+            />
             <IoMdSearch className="absolute sea-icon" />
           </div>
           {!itTrue && (
             <div className="op flex">
-              <BsBag />
+              <BsBag style={{ marginRight: "5px", marginTop: "3px" }} />{" "}
               <p style={{ color: "#000" }}>Basket(0)</p>
+              <RiArrowDownSLine
+                style={{ marginTop: "7px", marginLeft: "5px" }}
+              />
             </div>
           )}
         </div>

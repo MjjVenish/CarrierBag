@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { AiOutlineStar } from "react-icons/ai";
-import { FaHome, FaUser } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { IoIosCall } from "react-icons/io";
-import { MdShoppingBag } from "react-icons/md";
 import HelpLine from "./HelpLine";
 import CarrierShop from "../components/CarrierShop";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { BsBag } from "react-icons/bs";
 import { IoMdSearch } from "react-icons/io";
 import BagsNavbar from "../components/BagsNavbar";
 import { useNavigate } from "react-router-dom";
+import rating from "../../assets/rating.png";
+import sing from "../../assets/sing.png";
+import bag from "../../assets/bag-p.png";
+import user from "../../assets/user.png";
 
-const MainHead = () => {
+const MainHead = ({ className }) => {
   const [itTrue, setItTrue] = useState(false);
   const [isTrue, setIsTrue] = useState(false);
   const navigate = useNavigate();
@@ -45,14 +48,15 @@ const MainHead = () => {
   return (
     <div>
       <div className="flex just he-main">
-        <h3>
-          Excellent <AiOutlineStar className="star" />
-          <AiOutlineStar className="star" />
-          <AiOutlineStar className="star" />
-          <AiOutlineStar className="star" />
-          <AiOutlineStar className="star" />{" "}
-          {!itTrue && "8,279 Reviews on TrustPilot"}
-        </h3>
+        <h3>Excellent </h3>
+        <img className="rating" src={rating} alt="" />
+        {!itTrue && (
+          <>
+            <span>{"8,279 reviews on "}</span>
+            <img className="sing" src={sing} alt="" />
+            <span>Trustpilot</span>
+          </>
+        )}
       </div>
       {!itTrue ? (
         <HelpLine />
@@ -61,28 +65,50 @@ const MainHead = () => {
           <FaHome className="size-ic" />
           <GoMail className="size-ic" />
           <IoIosCall className="size-ic" />
-          <MdShoppingBag className="size-ic" />
-          <FaUser className="size-ic" onClick={() => navigate("/mypage")} />
+          <img src={bag} className="size-ic" alt="" />
+          <img src={user} alt="" onClick={() => navigate("/mypage")} />
         </div>
       )}
-      <div className="flex items-center logo just-between">
+      <div className={`flex ${className} items-center logo just-between`}>
         <CarrierShop />
         {!isTrue && (
           <>
-            <div className="search relative">
-              <input
-                type="text"
-                placeholder="E.g. Red Papper Bags,Jute Bags "
-              />
-              <IoMdSearch className="absolute sea-icon" />
+            <div className="search ">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="E.g. Red Papper Bags,Jute Bags, tissue paper, g "
+                />
+                <IoMdSearch className="absolute sea-icon" />
+              </div>
             </div>
             <div className="op flex">
-              <BsBag />
-              <p style={{ color: "#000" }}>Basket(0)</p>
+              <BsBag
+                style={{
+                  marginRight: "7px",
+                  color: " #4e9b44",
+                }}
+              />
+              <p style={{ color: "#000", fontWeight: "350", fontSize: "20px" }}>
+                Basket (0)
+              </p>
+              <RiArrowDownSLine
+                style={{
+                  marginTop: "7px",
+                  marginLeft: "5px",
+                }}
+              />
             </div>
           </>
         )}
-        {itTrue && <BsBag className="noti" />}
+        {itTrue && (
+          <div className="noti">
+            <div className="lock"></div>
+            <div className="key text-center">
+              <span>0</span>
+            </div>
+          </div>
+        )}
       </div>
       {!isTrue && <BagsNavbar />}
     </div>

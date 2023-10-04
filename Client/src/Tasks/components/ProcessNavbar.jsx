@@ -24,7 +24,7 @@ const ProcessNavbar = () => {
         <NavLink to={"/handles"}>2.Handles</NavLink>
       )}
       {material ? (
-        <span className="disabled-link">3.Material / Finish</span>
+        <span className="disabled-link flex">3.Material / Finish</span>
       ) : (
         <NavLink to={"/material"}>3.Material / Finish</NavLink>
       )}

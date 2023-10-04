@@ -8,10 +8,9 @@ import ProcessNavbar from "../components/ProcessNavbar";
 const PageWrapper = ({ children }) => {
   const [isTrue, setIsTrue] = useState(false);
 
-  useEffect(() => {
-    const url = window.location.href;
-    console.log(url);
-  }, []);
+  // useEffect(() => {
+  //   const url = window.location.href;
+  // }, []);
   const updateStateBasedOnViewport = () => {
     if (window.innerWidth <= 1000) {
       setIsTrue(true);
@@ -32,12 +31,19 @@ const PageWrapper = ({ children }) => {
       <div className="main-parent">
         <Header />
         {isTrue && <NavBar />}
-        <ProcessNavbar />
-        <div className="pad-effect">
-          <h2 className="h2">Welcome to our Bespoke Packaging Wizard </h2>
-          {children}
-          <Footer className={`fle ${isTrue ? "hei" : ""}`} />
+        <div className="flex">
+          <ProcessNavbar />
+          <div className="pad-effect">
+            <h2 className="h2">Welcome to our Bespoke Packaging Wizard </h2>
+            {children}
+            {isTrue ? (
+              <Footer className={`fle love ${isTrue ? "hei" : ""}`} />
+            ) : (
+              ""
+            )}
+          </div>
         </div>
+        {!isTrue && <Footer className={"fle"} />}
       </div>
     </>
   );

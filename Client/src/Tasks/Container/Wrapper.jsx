@@ -6,7 +6,7 @@ import Header from "../Page/Header";
 const Wrapper = ({ children }) => {
   return (
     <div>
-      <MainHead />
+      <MainHead className={"gin"} />
       <Header />
       {children}
       <Footer className={`fle fix`} />

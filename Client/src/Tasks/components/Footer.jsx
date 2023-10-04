@@ -1,10 +1,10 @@
 import { useProduct } from "../../context/ProductContext";
 import Parts from "./Parts";
-import face from "../../assets/fb.png";
-import insta from "../../assets/insta.jpg";
-import twi from "../../assets/Tw.png";
-import wiki from "../../assets/wiki.png";
-import you from "../../assets/youtube.jpeg";
+import face from "../../assets/fb1.png";
+import insta from "../../assets/instagram.png";
+import twi from "../../assets/tw1.png";
+import wiki from "../../assets/wordpress.png";
+import you from "../../assets/youtube.png";
 
 const Footer = ({ className }) => {
   const { itTrue } = useProduct();
