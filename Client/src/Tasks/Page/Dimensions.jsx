@@ -11,7 +11,7 @@ const Dimensions = () => {
         these steps for this product.
       </h3>
       <h4>8. What size of bag do you need?</h4>
-      <div className="view-bags">
+      <div className="view-bags cha">
         {dataBag?.dimensions?.map((product) => (
           <SingleProduct key={product.id} product={product} itTrue={true} />
         ))}

@@ -12,7 +12,7 @@ const BagColor = () => {
           steps for this product.
         </h3>
         <h4>5. What colour bag would you like?</h4>
-        <div className="view-bags">
+        <div className="view-bags cha">
           {dataBag?.bagColour?.map((product) => (
             <SingleProduct key={product.id} product={product} itTrue={true} />
           ))}

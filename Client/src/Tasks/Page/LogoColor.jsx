@@ -17,7 +17,7 @@ const LogoColor = () => {
         the bag colour necessarily, and if in doubt guess and once we've seen
         the artwork we'll confirm that for you.
       </p>
-      <div className="view-bags">
+      <div className="view-bags cha">
         {dataBag?.logoColour?.map((product) => (
           <SingleProduct key={product.id} product={product} itTrue={true} />
         ))}

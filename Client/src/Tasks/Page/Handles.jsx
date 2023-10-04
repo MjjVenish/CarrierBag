@@ -10,9 +10,13 @@ const Handles = () => {
       {dataBag?.handles[0] ? (
         <div className="main-page">
           <h3>2. Please select the handles that you want on your bag</h3>
-          <div className="view-bags">
+          <div className="view-bags cha">
             {dataBag?.handles?.map((product) => (
-              <SingleProduct key={product.id} product={product} itTrue={true} />
+              <SingleProduct
+                key={product.id}
+                product={product}
+                className={"next"}
+              />
             ))}
           </div>
           <Goback />

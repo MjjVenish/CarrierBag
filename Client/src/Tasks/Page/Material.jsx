@@ -11,9 +11,14 @@ const Material = () => {
         product.
       </h3>
       <h3> 3. Please select the material and finish that you require</h3>
-      <div className="view-bags flex flex-dir">
+      <div className="view-bags cha flex flex-dir">
         {dataBag?.material?.map((product) => (
-          <SingleProduct key={product.id} product={product} itTrue={true} />
+          <SingleProduct
+            key={product.id}
+            product={product}
+            itTrue={true}
+            className={"twist"}
+          />
         ))}
         <Goback />
       </div>
