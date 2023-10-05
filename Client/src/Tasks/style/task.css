@@ -1,8 +1,9 @@
 .disabled-link {
-    color: #888;
+        color: #e0e0e0;
     pointer-events: none;
     text-decoration: none;
     cursor: not-allowed;
+    font-weight: 600;
 }
 .bags{
     cursor: pointer;
@@ -64,7 +65,7 @@ header{
     padding: 1.5rem 0px;
 }
 .logo{
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding-left: 10px;
 }
 .pad-effect{
@@ -154,7 +155,7 @@ padding: 1rem 2rem;
 }
 
 .imag-bag{
-    height: 55px;
+    height: 50px;
 }
 .noti{
     margin-right: 15px;
@@ -211,6 +212,37 @@ padding: 1rem 2rem;
 .main-page h2{
     font-size: 23px;
 }
+.prog{
+    font-weight: 500;
+}
+.pay{
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 22vh;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.pay h3{
+    font-weight: 500;
+}
+.fle{
+        width: 97%;
+            margin: 0 auto;
+            padding: 0 1.5%;
+}
+.contact h4{
+    padding: 15px 10px;
+}
+.contact h3{
+    padding: 10px;
+}
+footer{
+    padding: 10px 0px;
+   
+}
+
 
 
 
@@ -333,7 +365,7 @@ padding-left: 20vw;
         align-items: center;
     }
     .help-line a{
-color: #000;
+color: #414141;
 font-weight: 600;
     }
     .he-main{
@@ -355,35 +387,91 @@ font-weight: 600;
     .us{
         padding-top: 15px;
     }
-    
+    .he-main span{
+        font-size: 14px;
+    }
+    .he-main .sing{
+        height: 25px;
+    } .contact h4 {
+         padding: 6px 10px;
+     }
+          .fle {
+              border-bottom: 1px solid #787878;
+          }
+   .mlp{
+    display: flex;
+    padding: 10px 15px;
+   }
+   .eppa{
+    padding: 10px 0px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+   }
+   .der{
+    flex: 2 1 0;
+   }
+   .der h3{
+    font-weight: 400;
+    font-size: medium;
+   }
+   .card{
+    flex: 3 1 0;
+   }
+   .ayo{
+    flex: 1 1 0;
+    display: flex;
+    justify-content: flex-end;
+   }
+   
+   .cori{
+    display: flex;
+    justify-content: center
+   }
 }
+
+
+
+
+
 @media (min-width:900px){
 .sea-icon {
         right: 19vh;
     }
     .search input{
-        width: 70%;
+        width: 63%;
     }
 }
 
+
+
+
+
+
+
 @media (min-width:1000px){
 .main-parent{
-    padding: 0px 25px;
+    padding: 0px 20px;
     display: flex;
     /* flex-direction: column; */
+}
+.view-bags{
+    width: 92%;
 }
 header{
     padding: 5px 0px;
 }
 .main-page{
     padding-left: 0px;
+    width: 100%;
 }
-.main-page{
-    width: 95%;
+.pad-effect{
+    padding: 10px 40px;
 }
+
  .sea-icon {
-     right: 15px;
-     top: 8px;
+     right: -20px;
+     top: 29px;
  }
    .up-down {
        display: none;
@@ -414,16 +502,20 @@ header{
 }
 .navs span,
 .navs h1,
-.navs a,
-.navs h2{
-    padding: 10px 20px;
-    width: 220px;
+.navs a{
+    padding: 10px 17px;
+    width: 210px;
+}
+.navs .prog{
+    padding: 0px 20px;
+    padding-bottom: 18px;
+    padding-top: 10px;
 }
 .navs a{
    border-left: 2px solid #4e9b44;
 }
 .help-line{
-    height: 5vh;
+    height: auto;
     margin-bottom: 10px;
     justify-content: space-between;
         padding: 0px 20px;
@@ -436,18 +528,29 @@ header{
     flex: 1 1 0;
     display: flex;
     justify-content: center;
+    padding-top: 15px;
+}
+.op p{
+    color: #414141;
+    font-size: 20px;
 }
 .search{
     flex: 4 1 0;
     text-align: center;
 }
 .search .relative{
-    width: 50%;
+    width: 45%;
     text-align: center;
+     align-items: flex-end;
+     padding-top: 20px;
 }
 .search input{
     width: 100%;
-    padding: 9px 35px 9px 7px;
+    padding: 8px 30px 8px 7px;
+    font-size: 1rem;
+    margin-left: 26px;
+    border: 1px solid #64c055;
+    outline: none;
 }
 /* .logo,.home-nav,.bag-link{
    
@@ -455,19 +558,17 @@ header{
 .navs{
     margin-top: 0px;
 }
-.hel a{
-    padding: 0px 11.5px;
-}
 .bag-link{
     padding: 0px 25px;
     flex-wrap: wrap;
 }
 .bag-link a{
- color: #000;
+ color: #414141;
  font-weight: 600;
  font-size: 15px;
- padding: 0px 6px;
- margin-top: 15px;
+ padding: 0px 8px;
+ margin-top:26px ;
+ margin-left: 12px;
 }
 #red{
     color: #f81515;
@@ -500,7 +601,8 @@ border-top: 1px solid #000;
     flex-wrap: wrap;
 }
 .imag-bag {
-    height: 65px;
+    height: 60px;
+    margin-left: 15px;
 }
 .rating{
     padding: 0px 10px;
@@ -510,40 +612,54 @@ border-top: 1px solid #000;
     height: 4.5vh;
 }
 .help-line a{
-font-weight: 600;
+font-weight: bold;
+padding: 7px 7px;
 }
 .he-main h3{
   font-size: larger;
+  padding-bottom: 3px;
 }
 .he-main img{
     margin: 0 5px;
 }
-
+.home-nav a {
+    padding: 0px 5px;
+}
+.he-main h3,.he-main span{
+    font-weight: 500;
+}
+.home-nav{
+    padding-left: 5px;
+}
+.card{
+   padding-left: 8%;
+}
 }
 
 
 
 
-@media (min-width:1300px){
+@media (min-width:1320px){
 .main-parent{
-    padding: 0px 8vw;
+    padding: 0px 7.5vw;
 }
 .logo,.bag-link{
-    padding: 0px 8vw;
+    padding: 0px 7vw;
 } 
 .home-nav{
-   padding: 0px 6vw;
+   padding: 0px 6.8vw;
    margin-top: 14px;
 }
 .bag-link a{
-    padding: 0px 7px;
+    padding: 0px 1px;
     font-weight: 500;
 }
+
 .help-line{
     padding: 0px 8vw;
 }
 .hel a{
-    padding: 0px 5px;
+    padding: 0px 7px;
 }
 .op{
     justify-content: flex-end;
@@ -563,7 +679,7 @@ font-weight: 600;
     padding: 9px 0px;
 }
 .hel a {
-    padding: 0px 9px;
+    padding: 0px 8px;
 }
   .up-down {
       display: none;
@@ -572,5 +688,17 @@ font-weight: 600;
   .bag-link a{
     font-weight: 600;
   }
+  .navs span,
+  .navs h1,
+  .navs a{
+    padding: 10px 17px;
+  }
+  
 }
 
+
+
+
+/* .logo img{
+   margin-bottom: 10px;
+} */

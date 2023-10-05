@@ -46,7 +46,7 @@ const MainHead = ({ className }) => {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <div className="flex just he-main">
         <h3>Excellent </h3>
         <img className="rating" src={rating} alt="" />
@@ -54,7 +54,6 @@ const MainHead = ({ className }) => {
           <>
             <span>{"8,279 reviews on "}</span>
             <img className="sing" src={sing} alt="" />
-            <span>Trustpilot</span>
           </>
         )}
       </div>
@@ -89,13 +88,13 @@ const MainHead = ({ className }) => {
                   color: " #4e9b44",
                 }}
               />
-              <p style={{ color: "#000", fontWeight: "350", fontSize: "20px" }}>
-                Basket (0)
-              </p>
+              <p style={{ color: "#414141" }}>Basket (0)</p>
               <RiArrowDownSLine
                 style={{
-                  marginTop: "7px",
+                  marginTop: "10px",
                   marginLeft: "5px",
+                  fontSize: "medium",
+                  color: "#414141",
                 }}
               />
             </div>

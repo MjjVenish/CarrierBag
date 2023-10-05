@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MainHead from "../Page/MainHead";
 import ProcessNavbar from "../components/ProcessNavbar";
+import PayPal from "../components/PayPal";
 
 const PageWrapper = ({ children }) => {
   const [isTrue, setIsTrue] = useState(false);
@@ -36,14 +37,15 @@ const PageWrapper = ({ children }) => {
           <div className="pad-effect">
             <h2 className="h2">Welcome to our Bespoke Packaging Wizard </h2>
             {children}
-            {isTrue ? (
+            {/* {isTrue ? (
               <Footer className={`fle love ${isTrue ? "hei" : ""}`} />
             ) : (
               ""
-            )}
+            )} */}
           </div>
         </div>
-        {!isTrue && <Footer className={"fle"} />}
+        {<Footer className={"fle"} />}
+        <PayPal />
       </div>
     </>
   );

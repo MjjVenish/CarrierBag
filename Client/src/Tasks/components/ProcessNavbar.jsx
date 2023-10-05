@@ -15,7 +15,7 @@ const ProcessNavbar = () => {
   } = linkHandle;
   return (
     <nav className="navs flex flex-dir">
-      <h2>Process</h2>
+      <h2 className="prog">Progress</h2>
       <h1>Bag Type</h1>
       <NavLink to={"/"}>1.Product</NavLink>
       {handles ? (

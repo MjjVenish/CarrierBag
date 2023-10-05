@@ -20,7 +20,7 @@ const HelpLine = () => {
   return (
     <nav className="flex just-arrond help-line">
       <a href="*" className="ll">
-        Order Helpline:020-3002-9960
+        Order Helpline: 020-3002-9960
       </a>
       {isTrue ? (
         <>
@@ -28,11 +28,11 @@ const HelpLine = () => {
           <img src={dash} alt="" />
           <a href="*">Blog</a>
           <img src={dash} alt="" />
-          <a href="*">Print Packaging</a>
+          <a href="*">Printed Packaging</a>
           <img src={dash} alt="" />
           <a href="*">Track Order</a>
           <img src={dash} alt="" />
-          <a href="*">Login/Register</a>
+          <a href="*"> Login/Register</a>
         </>
       ) : (
         <div className="hel">
@@ -40,11 +40,12 @@ const HelpLine = () => {
           <img src={dash} alt="" />
           <a href="*">Blog</a>
           <img src={dash} alt="" />
-          <a href="*">Print Packaging</a>
+          <a href="*">Printed Packaging</a>
           <img src={dash} alt="" />
           <a href="*">Track Order</a>
           <img src={dash} alt="" />
           <a href="*" className="lo">
+            {" "}
             Login / Register
           </a>
         </div>
