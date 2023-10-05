@@ -9,13 +9,13 @@
     cursor: pointer;
 }
  .bags span {
-     height: 5px;
+     height: 6px;
      background-color: #fff;
      color: #fff;
      width: 100%;
  }
  .bags:hover .bt {
-     background-color: #64c055;
+     background-color: #4e9b44;
  }
 .home-nav{
     justify-content: space-around;
@@ -93,7 +93,7 @@ padding: 1rem 2rem;
     text-align: center;
     padding: 0px 12px;
     border: 1px solid #dfe0de;
-    border-top: 5px solid black none;
+    /* border-top: 5px solid black none; */
 }
 .bags h4{
     font-size: 18px;
@@ -102,7 +102,7 @@ padding: 1rem 2rem;
 }
 .bags button{
     background:linear-gradient(to bottom, #4e9b44 0%, #64c055 100%);
-    width: 90%;
+    width: 100%;
     color: #fff;
     font-size:large;
     padding: 12px 0px;
@@ -250,7 +250,8 @@ footer{
     .view-bags{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 25px;
+     row-gap:  20px;
+     column-gap: 25px;
       padding-top: 20px;
     }
     .cha{
@@ -352,8 +353,8 @@ padding-left: 20vw;
         flex: 1 1 0;
     }
     .lab{
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: 1px solid #8f8e8e;
+        border-bottom: 1px solid #848484;
     }
     .up-down{
         display: none;
@@ -456,7 +457,7 @@ font-weight: 600;
     /* flex-direction: column; */
 }
 .view-bags{
-    width: 92%;
+    width: 93%;
 }
 header{
     padding: 5px 0px;
@@ -637,9 +638,7 @@ padding: 7px 7px;
 }
 
 
-
-
-@media (min-width:1320px){
+@media (min-width:1500px){
 .main-parent{
     padding: 0px 7.5vw;
 }
