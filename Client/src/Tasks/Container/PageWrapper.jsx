@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import MainHead from "../Page/MainHead";
 import ProcessNavbar from "../components/ProcessNavbar";
 import PayPal from "../components/PayPal";
+import LiveChat from "../components/LiveChat";
 
 const PageWrapper = ({ children }) => {
   const [isTrue, setIsTrue] = useState(false);
@@ -47,6 +48,7 @@ const PageWrapper = ({ children }) => {
         {<Footer className={"fle"} />}
         <PayPal />
       </div>
+      <LiveChat />
     </>
   );
 };

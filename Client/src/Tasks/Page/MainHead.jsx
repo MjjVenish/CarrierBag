@@ -76,7 +76,7 @@ const MainHead = ({ className }) => {
               <div className="relative">
                 <input
                   type="text"
-                  placeholder="E.g. Red Papper Bags,Jute Bags, tissue paper, g "
+                  placeholder="E.g. Red papper bags,jute bags,tissue paper, g "
                 />
                 <IoMdSearch className="absolute sea-icon" />
               </div>

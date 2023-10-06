@@ -102,7 +102,7 @@ padding: 1rem 2rem;
 }
 .bags button{
     background:linear-gradient(to bottom, #4e9b44 0%, #64c055 100%);
-    width: 100%;
+    width: 70vw;
     color: #fff;
     font-size:large;
     padding: 12px 0px;
@@ -240,7 +240,26 @@ padding: 1rem 2rem;
 }
 footer{
     padding: 10px 0px;
-   
+}
+.live-chat{
+    position: fixed;
+    bottom: 0;
+}
+.live-chat img{
+    height: 60px;
+}
+.live-chat .relative{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+.live-chat h4{
+    justify-content: flex-end;
+    background-color:#4e9b44;
+    color: #fff;
+    padding: 6px 10px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .26);
+    border-radius:15px 0px 10px 15px ;
 }
 
 
@@ -562,13 +581,14 @@ header{
 .bag-link{
     padding: 0px 25px;
     flex-wrap: wrap;
+    padding-top: 10px;
+    position: relative;
 }
 .bag-link a{
  color: #414141;
  font-weight: 600;
  font-size: 15px;
- padding: 0px 8px;
- margin-top:26px ;
+ padding:13px 8px;
  margin-left: 12px;
 }
 #red{
@@ -635,6 +655,84 @@ padding: 7px 7px;
 .card{
    padding-left: 8%;
 }
+.all-bags{
+    display: none;
+    background-color: #fff;
+    width: 95.5vw;
+    left: 1.5vw;
+    border: 1px solid #dfe0de;
+    padding:0px 20px;
+    top: 60px;
+    z-index: 0;
+    position: absolute;
+    padding-bottom: 10px;
+}
+.all-bags p{
+    font-weight: 300;
+    font-size: medium;
+    padding: 2px 0px;
+}
+.all-bags h5{
+font-size: 15px;
+padding-top: 20px;
+padding-bottom: 4px;
+}
+.all-bags div{
+    width: 20vw;
+    padding-right: 30px;
+}
+.harrier:hover .carrier{
+    display: flex;
+}
+.hristmas:hover .christmas{
+    display: flex;    
+}
+.aper:hover .paper {
+    display: flex;
+}
+.ute:hover .jute {
+    display: flex;
+}
+.hristmas:hover .christmas {
+    display: flex;
+}
+.randed:hover .branded {
+    display: flex;
+}
+.issue:hover .tissue {
+    display: flex;
+}
+.ift:hover .gift {
+    display: flex;
+}
+.ostal:hover .postal {
+    display: flex;
+}
+.nsutrial:hover .insutrial{
+    display: flex;
+}
+.rinted:hover .printed {
+    display: flex;
+}
+.bag-link a:hover{
+    border: 1px solid #dfe0de;
+    box-shadow:  0px 4px  #4e9b44;
+    z-index: 100;
+}
+.live-chat .relative{
+    background-color: #414141;
+    height: 5vh;
+}
+.live-chat h4{
+    position: absolute;
+    right: 3vw;
+    top: -2vh;
+}
+.live-chat .nor{
+   position: absolute;
+   height: 80px;
+   top:-2vh ;
+}
 }
 
 
@@ -649,11 +747,16 @@ padding: 7px 7px;
    padding: 0px 6.8vw;
    margin-top: 14px;
 }
+.bag-link{
+    padding-top: 10px;  
+}
 .bag-link a{
-    padding: 0px 1px;
+    padding: 13px 1px;
     font-weight: 500;
 }
-
+.home-nav{
+    margin-top: 0px;
+}
 .help-line{
     padding: 0px 8vw;
 }
